@@ -1,0 +1,1140 @@
+---
+landscape:
+- category: 云原生应用
+  subcategories:
+  - name: 边缘计算
+    items:
+    - name: OpenYurt
+      description: >-
+        OpenYurt 是阿里巴巴开源的首个边缘计算云原生项目。该项目主打“云边一体化”概念，依托原生 Kubernetes
+        强大的容器编排、调度能力，通过众多边缘计算应用场景锤炼，实现了一整套对原生
+        Kubernetes“零”侵入的边缘云原生方案，提供诸如边缘自治、高效运维通道、边缘单元化管理、边缘流量拓扑管理，安全容器、边缘
+        Serverless/FaaS、异构资源支持等能力。OpenYurt
+        能帮用户解决在海量边、端资源上完成大规模应用交付、运维、管控的问题，并提供中心服务下沉通道，实现和边缘计算应用的无缝对接。
+      homepage_url: 'https://github.com/alibaba/openyurt'
+      repo_url: 'https://github.com/alibaba/openyurt'
+      isopen: true
+      logo: app/edge/OpenYurt.png
+      filter:
+        - nation
+    - name: KubeEdge
+      description: >-
+        KubeEdge是一个开源系统，用于将本机容器化的应用程序编排功能扩展到Edge上的主机，
+        它基于kubernetes构建，并为网络，应用程序提供基本的基础架构支持。云和边缘之间的部署和元数据同步。 Kubeedge已获得Apache
+        2.0的许可。并且完全免费供个人或商业使用。
+      repo_url: https://github.com/kubeedge/kubeedge
+      logo: app/edge/KubeEdge.png
+      isopen: true
+      offical: false
+      tags:
+      - name: CNCF
+        value: 毕业
+      - name: LF
+        value: 项目
+      - name: OPS
+        value: 开源软件
+      address: Beijing
+      homepage_url: https://kubedge.cloud/
+      filter:
+      - nation
+      - alibaba
+    - name: openedge
+      description: Kubedge Template Repo
+      repo_url: https://github.com/kubeedge/kubeedge
+      logo: app/edge/openedge.png
+      isopen: true
+      offical: false
+      tags:
+      - name: CNCF
+        value: 毕业
+      - name: LF
+        value: 项目
+      - name: OPS
+        value: 开源软件
+      address: Beijing
+      filter:
+      - nation
+      - alibaba
+      homepage_url: https://www.progress.com/openedge
+    - name: Edgent
+      description: >-
+        Apache Edgent 是一种编程模型和具有微内核风格的运行时，可嵌入到网关和小型的物联网设备中。Apache Edgent
+        能用于对来自器材、车辆、系统、应用、设备和传感器（例如树莓派或智能手机）的连续数据流进行实时分析。
+      homepage_url: 'http://edgent.incubator.apache.org/'
+      repo_url: 'https://github.com/apache/incubator-retired-edgent'
+      isopen: false
+      logo: app/edge/EDGENT.png
+    - name: EdgeX Foundry
+      description: >-
+        EdgeX Foundry是由 Linux
+        基金会运营的厂商中立的开放源码项目，旨在为物联网边缘计算创建公共开放的框架。该项目的核心是基于与硬件和操作系统完全无关的参考软件平台建立的互操作框架，使能即插即用的组件生态系统，统一市场，加速物联网方案的部署。EdgeX
+        Foundry 使有意参与的各方在开放与互操作的物联网方案中自由协作，无论他们是使用公开标准或私有方案。
+      homepage_url: 'https://www.edgexfoundry.org/'
+      repo_url: 'https://github.com/edgexfoundry/edgex-go'
+      isopen: false
+      logo: app/edge/EDGEXFOUNDRY.png
+  - name: 人工智能
+    items:
+    - name: Angel
+      description: >-
+        Angel 是一个基于参数服务器（Parameter
+        Server）理念开发的高性能分布式机器学习平台，它基于腾讯内部的海量数据进行了反复的调优，并具有广泛的适用性和稳定性，模型维度越高，优势越明显。
+        Angel 由腾讯和北京大学联合开发，兼顾了工业界的高可用性和学术界的创新性。
+      homepage_url: 'https://github.com/Angel-ML/angel'
+      repo_url: 'https://github.com/Angel-ML/angel'
+      isopen: true
+      logo: app/ai/Angel.png
+    - name: MNN
+      description: >-
+        MNN 是一个轻量级的深度神经网络推理引擎，在端侧加载深度神经网络模型进行推理预测。目前，MNN 已经在阿里巴巴的手机淘宝、手机天猫、优酷等 20 多个
+        App 中使用，覆盖直播、短视频、搜索推荐、商品图像搜索、互动营销、权益发放、安全风控等场景。此外，IoT 等场景下也有若干应用。
+      homepage_url: 'https://github.com/alibaba/MNN'
+      repo_url: 'https://github.com/alibaba/MNN'
+      isopen: true
+      logo: app/ai/MNN.png
+    - name: PaddleX
+      description: PaddleX是基于飞桨核心框架、开发套件和工具组件的深度学习全流程开发工具。具备 全流程打通 、融合产业实践 、易用易集成 三大特点。
+      homepage_url: 'http://www.paddlepaddle.org.cn/paddle/paddlex'
+      repo_url: ' https://github.com/PaddlePaddle/PaddleX'
+      isopen: true
+      logo: app/ai/PaddleX.png
+    - name: ElasticDL
+      description: ElasticDL 是一个基于 TensorFlow 2.0 构建的 Kubernetes 原生深度学习框架，支持容错和弹性调度。
+      homepage_url: 'https://github.com/sql-machine-learning/elasticdl'
+      repo_url: 'https://github.com/sql-machine-learning/elasticdl'
+      isopen: true
+      logo: app/ai/ElasticDL.png
+    - name: SQLFlow
+      description: >-
+        SQLFlow=SQL引擎+AI引擎。其抽象出端到端从数据到模型的研发过程，配合底层的引擎及自动优化，让具备基础SQL知识的技术人员，也能轻松完成大部分的人工智能工作，如机器学习、模型训练和预测等。用户仅需几行SQL代码就能描述整个应用或者产品背后的数据流和AI 构造。
+      homepage_url: 'https://github.com/sql-machine-learning/sqlflow'
+      repo_url: 'https://github.com/sql-machine-learning/sqlflow'
+      isopen: true
+      logo: app/ai/SQLFlow.png
+    - name: TensorFlow
+      description: >-
+        Tensorflow拥有多层级结构，可部署于各类服务器、PC终端和网页并支持GPU和TPU高性能数值计算，被广泛应用于谷歌内部的产品开发和各领域的科学研究
+      homepage_url: 'https://github.com/tensorflow'
+      repo_url: 'https://github.com/tensorflow/tensorflow'
+      isopen: false
+      logo: app/ai/TensorFlow.png
+    - name: SimpleCV
+      description: >-
+        SimpleCV
+        将很多强大的开源计算机视觉库包含在一个便捷的Python包中。使用SimpleCV，你可以在统一的框架下使用高级算法，例如特征检测、滤波和模式识别。使用者不用清楚一些细节，比如图像比特深度、文件格式、颜色空间、缓冲区管理、特征值还有矩阵和图像的存储。
+      homepage_url: 'http://simplecv.org/'
+      repo_url: 'https://github.com/sightmachine/SimpleCV'
+      isopen: false
+      logo: app/ai/SimpleCV.png
+    - name: Kubeflow
+      description: >-
+        Kubeflow 是谷歌发布的一个机器学习工具库，Kubeflow 项目旨在使 Kubernetes
+        上的机器学习变的轻松、便捷、可扩展，其目标不是重建其他服务，而是提供一种简便的方式找到最好的 OSS 解决方案。
+      homepage_url: 'https://github.com/kubeflow/kubeflow'
+      repo_url: 'https://github.com/kubeflow/kubeflow'
+      isopen: false
+      logo: app/ai/Kubeflow.png
+  - name: 大数据
+    items:
+    - name: CRUNCH
+      description: ''
+      homepage_url: ''
+      repo_url: ''
+      isopen: false
+      logo: app/data/CRUNCH.png
+    - name: Flink
+      description: >-
+        Flink开源流处理框架，其核心是用Java和Scala编写的分布式流数据流引擎。Flink以数据并行和流水线方式执行任意流数据程序，Flink的流水线运行时系统可以执行批处理和流处理程序。此外，Flink的运行时本身也支持迭代算法的执行。
+      homepage_url: 'https://github.com/apache/flink'
+      repo_url: 'https://github.com/apache/flink'
+      isopen: false
+      logo: app/data/Flink.png
+    - name: HIVE
+      description: hive是基于Hadoop的一个数据仓库工具，用来进行数据提取、转化、加载，这是一种可以存储、查询和分析存储在Hadoop中的大规模数据的机制。
+      homepage_url: 'https://hive.apache.org/'
+      repo_url: 'https://github.com/apache/hive'
+      isopen: false
+      logo: app/data/HIVE.png
+    - name: Spark
+      description: Spark 是专为大规模数据处理而设计的快速通用的计算引擎。S
+      homepage_url: 'http://spark.apache.org/'
+      repo_url: 'https://github.com/apache/spark'
+      isopen: false
+      logo: app/data/Spark.png
+  - name: 区块链
+    items:
+      - name: XUPER
+        description: Xuper是百度发布的区块链品牌
+        homepage_url: ''
+        repo_url: 'https://github.com/xuperchain/xuperchain/tree/v3.8.0'
+        isopen: true
+        logo: app/block/XUPER.png
+      - name: HYPERLEDGER
+        description: Hyperledger (或 Hyperledger项目)是一个旨在推动区块链跨行业应用的开源项目
+        homepage_url: 'https://www.hyperledger.org/'
+        repo_url: 'https://github.com/hyperledger/fabric'
+        isopen: false
+        logo: app/block/HYPERLEDGER.png
+      - name: ethereum
+        description: >-
+          以太坊（Ethereum）是一个开源的有智能合约功能的公共区块链平台，通过其专用加密货币以太币提供去中心化的以太虚拟机（Ethereum Virtual
+          Machine）来处理点对点合约。
+        homepage_url: 'https://ethereum.org/zn/'
+        repo_url: 'https://github.com/ethereum/go-ethereum'
+        isopen: false
+        logo: app/block/ethereum.png
+      - name: factom
+        description: Factom是一个使用块链技术来保护和验证诸如公共记录和业务文档的数据，利用区块链技术帮助各种各样应用程序的开发的公司。
+        homepage_url: 'https://www.factom.com/'
+        repo_url: ''
+        isopen: false
+        logo: app/block/factom.png
+      - name: ripple
+        description: >-
+          瑞波币是Ripple网络的基础货币，它可以在整个ripple网络中流通，总数量为1000亿，并且随着交易的增多而逐渐减少，瑞波币的运营公司为Ripple
+          Labs（其前身为OpenCoin）
+        homepage_url: 'https://ripple.com/'
+        repo_url: 'https://github.com/ripple/rippled'
+        isopen: false
+        logo: app/block/ripple.png
+- category: 云原生应用编排及管理
+  subcategories:
+  - name: 编排与调度
+    items:
+      - name: VOLCANO
+        description: >-
+          Volcano 是基于 Kubernetes 的批处理系统，源自于华为云 AI 容器。Volcano 方便
+          AI、大数据、基因、渲染等诸多行业通用计算框架接入，提供高性能任务调度引擎，高性能异构芯片管理，高性能任务运行管理等能力。
+        homepage_url: 'https://github.com/volcano-sh/volcano'
+        repo_url: 'https://github.com/volcano-sh/volcano'
+        isopen: true
+        logo: manager/manager/VOLCANO.jpg
+      - name: TKEStack
+        description: >-
+          TKEStack是腾讯开源的一款集强壮性和易用性于一身的企业级容器编排引擎，以极简的向导式界面提供了容器应用的全生命周期管理能力，帮助用户在私有云环境中敏捷、高效地构建和发布应用程序。
+        homepage_url: 'https://github.com/tkestack/'
+        repo_url: 'https://github.com/tkestack/'
+        isopen: true
+        logo: manager/manager/TKEStack.png
+      - name: kubernetes
+        description: kubernetes，简称K8s，是用8代替8个字符“ubernete”而成的缩写。是一个开源的，用于管理云平台中多个主机上的容器化的应用
+        homepage_url: 'https://kubernetes.io/'
+        repo_url: 'https://github.com/kubernetes/kubernetes'
+        isopen: false
+        logo: manager/manager/kubenetes.png
+      - name: MESOS
+        description: Mesos是Apache下的开源分布式资源管理框架，它被称为是分布式系统的内核。
+        homepage_url: 'http://mesos.apache.org/'
+        repo_url: 'https://github.com/apache/mesos'
+        isopen: false
+        logo: manager/manager/MESOS.jpg
+      - name: SWARM
+        description: >-
+          Docker Swarm 是 Docker 的集群管理工具。它将 Docker 主机池转变为单个虚拟 Docker 主机。 Docker Swarm
+          提供了标准的 Docker API，所有任何已经与 Docker 守护程序通信的工具都可以使用 Swarm 轻松地扩展到多个主机。
+        homepage_url: ''
+        repo_url: 'https://github.com/docker/classicswarm'
+        isopen: false
+        logo: manager/manager/SWARM.png
+      - name: Crossplane
+        description: crossplane 是一个开源的多云控制平面，用于跨环境、集群、区域和云，管理你的云原生应用程序和基础设施
+        homepage_url: 'https://crossplane.io/'
+        repo_url: 'https://github.com/crossplane/crossplane'
+        isopen: false
+        logo: manager/manager/Crossplane.png
+  - name: 远程调用
+    items:
+      - name: brpc
+        description: 'brpc又称为baidu-rpc,是百度开发一款“远程过程调用”网络框架'
+        homepage_url: 'https://github.com/brpc/brpc'
+        repo_url: 'https://github.com/brpc/brpc'
+        isopen: true
+        logo: manager/rpc/brpc.png        
+      - name: SOFARPC
+        description: SOFARPC 是一个高可扩展性、高性能、生产级的 Java RPC 框架。在蚂蚁集团 SOFARPC 已经经历了十多年及五代版本的发展
+        homepage_url: 'https://github.com/sofastack/sofa-rpc'
+        repo_url: 'https://github.com/sofastack/sofa-rpc'
+        isopen: true
+        logo: manager/rpc/SOFARPC.jpg
+  - name: 服务代理
+    items:
+      - name: MOSN
+        description: MOSN 是一款使用 Go 语言开发的网络代理软件,由蚂蚁集团开源并经过几十万容器的生产级验证
+        homepage_url: 'https://mosn.io/'
+        repo_url: 'https://github.com/mosn/mosn'
+        isopen: true
+        logo: manager/proxy/MOSN.png
+      - name: BFE
+        description: BFE是基于百度统一前端BaiduFrontEnd开源的新一代应用层负载均衡引擎。
+        homepage_url: 'https://www.bfe-networks.net/'
+        repo_url: ''
+        isopen: true
+        logo: manager/proxy/BFE.png
+      - name: envoy
+        description: Envoy 是开源的边缘和服务代理，用于云原生应用，云原生基金会 CNCF 项目
+        homepage_url: 'https://www.envoyproxy.io/'
+        repo_url: 'https://github.com/envoyproxy/envoy'
+        isopen: false
+        logo: manager/proxy/envoy.jpg
+      - name: GetEnovy
+        description: 着重于建立、分发、部署和维护Envoy的工具集。
+        homepage_url: 'https://getenvoy.io/'
+        repo_url: ''
+        isopen: false
+        logo: manager/proxy/getenvoy.svg
+      - name: NGINX
+        description: Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。
+        homepage_url: 'https://www.nginx.com/'
+        repo_url: 'https://github.com/nginx/nginx'
+        isopen: false
+        logo: manager/proxy/NGINX.jpg
+  - name: API 网关
+    items:
+      - name: apisix
+        description: Apisix 是一个基于云原生、高速可扩展的开源微服务网关节点实现，其自身主要优势是高性能和强大的扩展性
+        homepage_url: 'https://www.iresty.com/'
+        repo_url: 'https://github.com/apache/apisix'
+        isopen: true
+        logo: manager/api/apisix.png
+      - name: krakenD
+        description: >-
+          KrakenD是高性能的开源API网关。它的核心功能是创建一个API，该API充当许多微服务到单个端点的聚合器，为您自动完成繁重的工作：聚合，转换，过滤，解码，限制，身份验证等。
+        homepage_url: 'https://www.krakend.io/'
+        repo_url: 'https://github.com/devopsfaith/krakend'
+        isopen: false
+        logo: manager/api/krakenD.jpeg
+      - name: Kong
+        description: 'Kong是一个Api Gateway,通过插件的形式提供负载均衡,日志记录,身份验证,速率限制,转换等功能。'
+        homepage_url: 'https://konghq.com/'
+        repo_url: 'https://github.com/Kong/kong'
+        isopen: false
+        logo: manager/api/Kong.jpeg
+      - name: Reaction Interaction Gateway
+        description: 为无状态微服务创建低延迟、交互式用户体验。
+        homepage_url: 'https://accenture.github.io/reactive-interaction-gateway/'
+        repo_url: 'https://github.com/accenture/reactive-interaction-gateway'
+        isopen: false
+        logo: manager/api/RIG.jpeg
+      - name: Ambassador
+        description: >-
+          Ambassador 是一个基于 Envoy 构建的 Kubernetes 原生 API 网关，专为微服务而设计，它本质上是一个 Envoy
+          入口控制器，但具有更多功能。
+        homepage_url: 'https://www.getambassador.io/editions/'
+        repo_url: 'https://github.com/datawire/ambassador'
+        isopen: false
+        logo: manager/api/Ambassador.jpeg
+  - name: 服务网格
+    items:
+      - name: Istio
+        description: Istio 是一个由谷歌、IBM 与 Lyft 共同开发的开源项目，旨在提供一种统一化的微服务连接、安全保障、管理与监控方式。
+        homepage_url: 'https://istio.io/'
+        repo_url: 'https://github.com/istio/istio'
+        isopen: false
+        logo: manager/mesh/Istio.png
+      - name: Kuma
+        description: kuma是通用特使服务网用于分布式服务连接。开源的服务网格控制平面，与特使一起提供高性能和可靠性
+        homepage_url: 'https://kuma.io/'
+        repo_url: 'https://github.com/kumahq/kuma'
+        isopen: false
+        logo: manager/mesh/Kuma.jpg
+      - name: Consul
+        description: consul是google开源的一个使用go语言开发的服务发现、配置管理中心服务。
+        homepage_url: 'https://www.consul.io/'
+        repo_url: 'https://github.com/hashicorp/consul'
+        isopen: false
+        logo: manager/mesh/Consul.jpg
+      - name: MESHERY
+        description: 'Meshery是multi-service网格管理平面,提供服务网格及其工作负载的生命周期、配置和性能管理。'
+        homepage_url: 'https://meshery.io/'
+        repo_url: 'https://github.com/rootsongjc/meshery'
+        isopen: false
+        logo: manager/mesh/MESHERY.png
+      - name: LINKERD
+        description: Linkerd 是一个提供弹性云端原生应用服务网格（service mesh）的开源项目，也是面向微服务的开源 RPC 代理。
+        homepage_url: 'https://linkerd.io/'
+        repo_url: 'https://github.com/linkerd/linkerd'
+        isopen: false
+        logo: manager/mesh/LINKERD.jpg
+      - name: maesh
+        description: Maesh 是一个简单但功能齐全的 Service Mesh，它基于容器原生，构建在 Traefik 之上。
+        homepage_url: 'https://traefik.io/traefik-mesh/'
+        repo_url: 'https://github.com/traefik/mesh'
+        isopen: false
+        logo: manager/mesh/maesh.jpg
+  - name: 分布式框架
+    items:
+      - name: TARS
+        description: >-
+          TARS
+          协议采用接口描述语言(IDL)来支持多种编程语言，C++、Java、Node.JS、PHP、Python、Golang等，使不同平台、不同语言编写的程序能够相互通信交流，打破语言屏障。
+        homepage_url: 'https://tarscloud.org'
+        repo_url: 'https://github.com/TarsCloud/Tars'
+        isopen: true
+        logo: manager/framework/TARS.png
+      - name: DUBBO
+        description: >-
+          Apache Dubbo是一款高性能、轻量级的开源Java
+          RPC框架，它提供了三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册和发现。
+        homepage_url: 'http://dubbo.apache.org/zh-cn/'
+        repo_url: 'https://github.com/apache/dubbo'
+        isopen: true
+        logo: manager/framework/Dubbo.png
+      - name: SOFASTACK
+        description: >-
+          SOFASTACK包含构建金融级云原生架构所需的各个组件，也是在金融场景里锤炼出来的最佳实践。提供项目管理、微服务应用开发、部署发布、监控运维、容灾高可用等全栈式解决方案，助力客户各类应用轻松转型分布式架构
+        homepage_url: 'https://www.sofastack.tech/'
+        repo_url: 'https://github.com/sofastack'
+        isopen: true
+        logo: manager/framework/SOFASTACK.png
+      - name: ServiceComb
+        description: 开箱即用、高性能、兼容流行生态、支持多语言的一站式开源微服务解决方案
+        homepage_url: 'http://servicecomb.apache.org/cn/'
+        repo_url: 'https://github.com/apache?q=ServiceComb'
+        isopen: true
+        logo: manager/framework/ServiceComb.png
+      - name: SEATA
+        description: Seata 是一款开源的分布式事务解决方案，致力于在微服务架构下提供高性能和简单易用的分布式事务服务。
+        homepage_url: 'http://seata.io/zh-cn/'
+        repo_url: 'https://github.com/seata/seata'
+        isopen: true
+        logo: manager/framework/SEATA.png
+      - name: TSF
+        description: TSF是由腾讯工程师开发的基于协程和Swoole的服务器框架，用于快速部署服务器。
+        homepage_url: ''
+        repo_url: 'https://github.com/Tencent/tsf'
+        isopen: false
+        logo: manager/framework/TSF.png
+      - name: 百度智能云
+        description: ''
+        homepage_url: ''
+        repo_url: 'https://github.com/baidubce'
+        isopen: false
+        logo: manager/framework/百度智能云.jpg
+  - name: 消息和流式处理
+    items:
+      - name: Apache RocketMQ
+        description: >-
+          Apache RocketMQ是一个分布式消息传递和流媒体平台，具有低延迟，高性能和可靠性，万亿级容量和灵活的可伸缩性。
+          它是阿里巴巴在2012年开源的第三代分布式消息中间件。
+        homepage_url: 'https://rocketmq.apache.org'
+        repo_url: 'https://github.com/apache/rocketmq'
+        isopen: true
+        logo: manager/stream/ApacheRocketMQ.png
+      - name: OpenMessaging
+        description: OpenMessaging是一个云原生，与供应商无关的开放式规范，用于分布式消息传递
+        homepage_url: 'http://openmessaging.cloud'
+        repo_url: 'https://github.com/openmessaging/specification'
+        isopen: true
+        logo: manager/stream/OpenMessaging.png
+      - name: TDMQ
+        description: >-
+          腾讯云消息队列 TDMQ（Tencent Distributed Message Queue，下文中简称TDMQ）是一款基于 Apache 顶级开源项目
+          Pulsar 自研的金融级分布式消息中间件。其计算与存储分离的架构设计，使得它具备极好的云原生和 Serverless
+          特性，用户按量使用，无需关心底层资源。它拥有原生 Java 、 C++、Python、GO 等多种 API，同时支持 kafka 协议以及 HTTP
+          协议方式接入，可为分布式应用系统提供异步解耦和削峰填谷的能力，具备互联网应用所需的海量消息堆积、高吞吐、可靠重试等特性。TDMQ
+          目前已应用在腾讯计费绝大部分场景，包括支付主路径、实时对账、实时监控、大数据实时分析等方面。
+        homepage_url: 'https://cloud.tencent.com/product/tdmq'
+        repo_url: ''
+        isopen: false
+        logo: manager/stream/TDMQ.png
+      - name: kafka
+        description: Apache Kafka是一个开放源代码的分布式事件流平台，成千上万的公司使用它来实现高性能数据管道，流分析，数据集成和关键任务应用程序。
+        homepage_url: 'https://kafka.apache.org'
+        repo_url: 'https://github.com/apache/kafka'
+        isopen: false
+        logo: manager/stream/kafka.png
+      - name: RabbitMQ
+        description: RabbitMQ是一个开源消息代理软件，最初实现了高级消息队列协议，此后通过插件体系结构进行了扩展，以支持面向流文本的消息协议，MQ遥测传输和其他协议。
+        homepage_url: 'https://www.rabbitmq.com'
+        repo_url: 'https://github.com/rabbitmq/rabbitmq-server'
+        isopen: false
+        logo: manager/stream/RabbitMQ.png
+      - name: PULSAR
+        description: Apache Pulsar是最初由Yahoo!创建的云原生分布式消息传递和流平台。 现在是顶级Apache Software Foundation项目
+        homepage_url: 'https://pulsar.apache.org'
+        repo_url: 'https://github.com/apache/pulsar'
+        isopen: false
+        logo: manager/stream/PULSAR.png
+  - name: Serverless
+    items:
+      - name: 阿里云
+        description: >-
+          阿里云创立于2009年，是全球领先的云计算及人工智能科技公司，致力于以在线公共服务的方式，提供安全、可靠的计算和数据处理能力，让计算和人工智能成为普惠科技
+        homepage_url: 'https://cn.aliyun.com/?spm=a2796.7990255.3156523820.31.1e532351H3BFxV'
+        repo_url: ''
+        isopen: false
+        logo: manager/Serverless/阿里云.png
+      - name: 腾讯云
+        description: >-
+          腾讯云有着深厚的基础架构，并且有着多年对海量互联网服务的经验，不管是社交、游戏还是其他领域，都有多年的成熟产品来提供产品服务。腾讯在云端完成重要部署，为开发者及企业提供云服务、云数据、云运营等整体一站式服务方案。
+        homepage_url: 'https://cloud.tencent.com'
+        repo_url: ''
+        isopen: false
+        logo: manager/Serverless/腾讯云.png
+      - name: 华为云
+        description: >-
+          华为云成立于2005年，隶属于华为公司
+          ，在北京、深圳、南京、美国等多地设立有研发和运营机构，贯彻华为公司“云、管、端”的战略方针，汇集海内外优秀技术人才，专注于云计算中公有云领域的技术研究与生态拓展，致力于为用户提供一站式云计算基础设施服务，目标成为中国最大的公有云服务与解决方案供应商。
+        homepage_url: 'https://www.huaweicloud.com'
+        repo_url: ''
+        isopen: false
+        logo: manager/Serverless/华为.png
+      - name: 百度智能云
+        description: >-
+          百度智能云于2015年正式对外开放运营，是基于百度多年技术沉淀打造的智能云计算品牌，致力于为客户提供全球领先的人工智能、大数据和云计算服务。凭借先进的技术和丰富的解决方案，全面赋能各行业，加速产业智能化。
+        homepage_url: 'https://cloud.baidu.com'
+        repo_url: ''
+        isopen: false
+        logo: manager/Serverless/百度智能云.png
+      - name: knative
+        description: >-
+          Knative扩展了Kubernetes，以提供一组中间件组件，这些组件对于构建可在任何地方运行的现代、以源为中心和基于容器的应用程序必不可少：内部，云端或甚至是第三方数据中心。
+        homepage_url: 'https://knative.dev'
+        repo_url: 'https://github.com/knative/serving'
+        isopen: false
+        logo: manager/Serverless/Knative.jpg
+      - name: kubeless
+        description: >-
+          Kubeless是Kubernetes原生的无服务器框架，可让您部署少量代码（函数）而不必担心基础架构。
+          它被设计为部署在Kubernetes集群之上，并利用所有出色的Kubernetes原语。 如果您正在寻找一种可以克隆您在AWS Lambda，Azure
+          Functions和Google Cloud Functions上找到的内容的无服务器开源解决方案，那么Kubeless非常适合您！
+        homepage_url: 'https://kubeless.io'
+        repo_url: 'https://github.com/kubeless/kubeless'
+        isopen: false
+        logo: manager/Serverless/Kubeless.jpg
+      - name: OPENFAAS
+        description: >-
+          OpenFaaS使将功能和现有代码轻松部署到Kubernetes变得很简单。 避免通过使用Docker进行锁定。 在任何公共或私有云上运行。
+          以任何语言构建微服务和功能。 旧版代码和二进制文件。 自动缩放以适应需求，或在空闲时自动缩放为零。
+        homepage_url: 'https://www.openfaas.com'
+        repo_url: 'https://github.com/openfaas/faas'
+        isopen: false
+        logo: manager/Serverless/OpenFAAS.jpg
+      - name: OpenWhisk
+        description: >-
+          Apache OpenWhisk是一个开放源代码的分布式无服务器平台，该平台执行功能（fx）以响应各种规模的事件。
+          OpenWhisk使用Docker容器管理基础架构，服务器和扩展，因此您可以专注于构建出色而高效的应用程序。
+        homepage_url: 'https://openwhisk.apache.org'
+        repo_url: 'https://github.com/apache/openwhisk'
+        isopen: false
+        logo: manager/Serverless/openwhisk.jpg
+  - name: CI/CD
+    items:
+      - name: Jenkins
+        description: 领先的开源自动化服务器Jenkins提供了数百个插件来支持构建，部署和自动化任何项目。
+        homepage_url: 'http://jenkins.io'
+        repo_url: 'https://github.com/jenkinsci/jenkins'
+        isopen: false
+        logo: manager/cicd/Jenkins.png
+      - name: TEKTON
+        description: >-
+          Tekton 是一个强大且灵活的 Kubernetes 原生开源框架，可用于创建持续集成和交付 (CI/CD)
+          系统。该框架可让您跨多个云服务商或本地系统进行构建、测试和部署，而无需操心基础实现详情。
+        homepage_url: 'https://cloud.google.com/tekton'
+        repo_url: 'https://github.com/tektoncd/pipeline'
+        isopen: false
+        logo: manager/cicd/TEKTON.png
+      - name: argo
+        description: Argo 是一个开源的容器本地工作流引擎，用于在Kubernetes上完成工作。
+        homepage_url: 'https://argoproj.github.io/'
+        repo_url: 'https://github.com/argoproj/argo'
+        isopen: false
+        logo: manager/cicd/argo.png
+      - name: Gitlab
+        description: GitLab是一个利用 Ruby on Rails 开发的开源应用程序，实现一个自托管的Git项目仓库，可通过Web界面进行访问公开的或者私人项目。
+        homepage_url: 'https://about.gitlab.com/'
+        repo_url: 'https://github.com/gitlabhq/gitlabhq'
+        isopen: false
+        logo: manager/cicd/Gitlab.png
+  - name: 自动化配置
+    items:
+      - name: Apollo
+        description: >-
+          Apollo（阿波罗）是携程框架部门研发的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
+        homepage_url: 'https://github.com/ctripcorp/apollo'
+        repo_url: 'https://github.com/ctripcorp/apollo'
+        isopen: true
+        logo: manager/test/Apollo.png
+      - name: NACOS
+        description: 一个易于使用的动态服务发现，配置和服务管理平台，用于构建云本机应用程序。
+        homepage_url: 'https://nacos.io/zh-cn/'
+        repo_url: 'https://github.com/alibaba/nacos'
+        isopen: true
+        logo: manager/test/NACOS.png
+      - name: ANSIBLE
+        description: >-
+          Ansible是一种开源软件供应，配置管理和应用程序部署工具，可将基础结构作为代码。
+          它可以在许多类Unix系统上运行，并且可以配置类Unix系统以及Microsoft Windows。
+        homepage_url: 'https://www.ansible.com'
+        repo_url: 'https://github.com/ansible/ansible'
+        isopen: false
+        logo: manager/test/ANSIBLE.png
+      - name: puppet
+        description: >-
+          Puppet是Linux，Unix和Windows系统的自动管理引擎，它基于集中式规范执行管理任务（例如添加用户，安装软件包和更新服务器配置）。
+        homepage_url: 'https://puppet.com'
+        repo_url: 'https://github.com/puppetlabs/puppet'
+        isopen: false
+        logo: manager/test/puppet.png
+      - name: CHEF
+        description: >-
+          Chef Infra，一个功能强大的自动化平台，可将基础结构转换为代码，从而自动在任何环境，任何规模上配置，部署和管理基础结构
+        homepage_url: ''
+        repo_url: 'https://github.com/chef/chef'
+        isopen: false
+        logo: manager/test/CHEF-INFRA.png
+      - name: SALTSTACK
+        description: >-
+          SaltStack开发了屡获殊荣的软件，供IT和安全运营团队使用，以帮助现代企业更有效地保护和维护其数字基础架构的各个方面。
+          但是我们不像其他传统系统管理或安全软件工具。 我们的软件在提供智能的，事件驱动的自动化方面可以独树一帜，可有效控制各种规模的复杂业务系统。
+        homepage_url: 'https://www.saltstack.com'
+        repo_url: 'https://github.com/saltstack/salt'
+        isopen: false
+        logo: manager/test/SALTSTACK.png
+  - name: 数据库
+    items:
+      - name: TiDB
+        description: TiDB是与MySQL协议兼容的开源分布式HTAP数据库
+        homepage_url: 'https://pingcap.com'
+        repo_url: 'https://github.com/pingcap/tidb'
+        isopen: true
+        logo: manager/db/TiDB.png
+      - name: DORIS
+        description: >-
+          Apache Doris是一个现代化的MPP分析型数据库产品。仅需亚秒级响应时间即可获得查询结果，有效地支持实时数据分析。Apache
+          Doris的分布式架构非常简洁，易于运维，并且可以支持10PB以上的超大数据集。Apache
+          Doris可以满足多种数据分析需求，例如固定历史报表，实时数据分析，交互式数据分析和探索式数据分析等。令您的数据分析工作更加简单高效！
+        homepage_url: 'https://doris.apache.org/master/zh-CN/'
+        repo_url: 'https://github.com/apache/incubator-doris'
+        isopen: true
+        logo: manager/db/DORIS.png
+      - name: DragonBase
+        description: >-
+          DragonBase是金山云打造的分布式数据库产品，可以提供关系型数据库服务、分布式数据库服务和全面的数据库管理服务。DragonBase可提供资源虚拟化、多租户、弹性扩容、数据备份恢复、数据迁移等能力，同时具备细粒度权限管理、访问控制、安全审计和加密等安全类功能。既支持标准x86平台部署，也支持国产化平台部署，并提供“两地三中心”和“三地五中心”的地域级故障自动无损容灾的能力
+        homepage_url: ''
+        repo_url: ''
+        isopen: false
+        logo: manager/db/DragonBase.png
+      - name: Baidu GaiaDB
+        description: >-
+          云数据库 GaiaDB-X 是百度智能云提供的基于中间件的分布式关系型数据库系统服务。云数据库 GaiaDB-X
+          可以基于普通服务器和横向扩展的方式，构建支持海量数据存储和访问的数据库系统，从而实现无线扩容和弹性扩展。
+        homepage_url: 'https://cloud.baidu.com/doc/DRDS/index.html'
+        repo_url: ''
+        isopen: false
+        logo: manager/db/GaiaBase.png
+      - name: OCEANBASE
+        description: >-
+          OceanBase是由蚂蚁集团、阿里巴巴完全自主研发的金融级分布式关系数据库，始创于2010年。OceanBase具有数据强一致、高可用、高性能、在线扩展、高度兼容SQL标准和主流关系数据库、低成本等特点。OceanBase至今已成功应用于支付宝全部核心业务：交易、支付、会员、账务等系统以及阿里巴巴淘宝（天猫）收藏夹、P4P广告报表等业务。除在蚂蚁集团和阿里巴巴业务系统中获广泛应用外，从2017年开始，OceanBase开始服务外部客户，客户包括南京银行、西安银行、印度Paytm、人保健康险等。
+        homepage_url: 'https://oceanbase.alipay.com'
+        repo_url: ''
+        isopen: false
+        logo: manager/db/OCEANBASE.png
+      - name: MySQL
+        description: MySQL是一个开源关系数据库管理系统。
+        homepage_url: 'https://www.mysql.com'
+        repo_url: 'https://github.com/mysql/mysql-server'
+        isopen: false
+        logo: manager/db/MySQL.png
+      - name: PostgreSQL
+        description: >-
+          PostgreSQL，也称为Postgres，是一个免费的开源关系数据库管理系统，强调可扩展性和SQL遵从性。
+          它最初的名称为POSTGRES，是其起源，是加州大学伯克利分校开发的Ingres数据库的后继产品。
+        homepage_url: 'https://www.postgresql.org'
+        repo_url: 'https://github.com/postgres/postgres'
+        isopen: false
+        logo: manager/db/PostgreSQL.png
+      - name: CouchDB
+        description: >-
+          Apache CouchDB是一个以Erlang实现的面向开源文档的NoSQL数据库。
+          CouchDB使用多种格式和协议来存储，传输和处理其数据，它使用JSON来存储数据，使用JavaScript作为其使用MapReduce的查询语言以及使用HTTP作为API。
+        homepage_url: 'https://couchdb.apache.org'
+        repo_url: 'https://github.com/apache/couchdb'
+        isopen: false
+        logo: manager/db/CouchDB.png
+      - name: redis
+        description: >-
+          Redis是一种开放源代码（BSD许可）的内存中数据结构存储，用作数据库，缓存和消息代理。
+          它支持数据结构，例如字符串，哈希，列表，集合，带范围查询的排序集合，位图，超日志，带有半径查询和流的地理空间索引。
+          Redis具有内置的复制，Lua脚本，LRU逐出，事务和不同级别的磁盘持久性，并通过Redis Sentinel和Redis
+          Cluster自动分区提供了高可用性。
+        homepage_url: 'https://redis.io'
+        repo_url: 'https://github.com/redis/redis'
+        isopen: false
+        logo: manager/db/redis.png
+      - name: KV
+        description: >-
+          TiKV 是一个分布式事务型的键值数据库，提供了满足 ACID 约束的分布式事务接口，并且通过 Raft 协议 保证了多副本数据一致性以及高可用。TiKV 作为 TiDB 的存储层，为用户写入 TiDB 的数据提供了持久化以及读写服务，同时还存储了 TiDB 的统计信息数据。
+        homepage_url: 'https://tikv.org/'
+        repo_url: 'https://github.com/tikv/tikv'
+        isopen: false
+        logo: manager/db/TIKV.png
+  - name: 容器镜像仓库
+    items:
+      - name: Dragonfly
+        description: >-
+          在数字化转型时代，企业正在迁移到微服务框架，并通过云平台简化业务管理。 Dragonfly是阿里巴巴集团（Alibaba
+          Group）的一个开源项目，考虑了基于Kubernetes的分布式业务流程系统，它主动解决了云原生映像分发中的以下问题：
+        homepage_url: 'https://d7y.io/en-us/'
+        repo_url: 'https://github.com/dragonflyoss/Dragonfly'
+        isopen: true
+        logo: manager/mirror/Dragonfly.png
+      - name: HARBOR
+        description: >-
+          Harbor是一个开放源代码注册中心，可通过策略和基于角色的访问控制来保护工件，确保扫描图像并使其免受漏洞侵害，并将图像签名为受信任的。
+          Harbor是CNCF毕业的项目，可提供合规性，性能和互操作性，以帮助您跨Kubernetes和Docker等云原生计算平台持续，安全地管理工件。
+        homepage_url: 'https://goharbor.io'
+        repo_url: 'https://github.com/goharbor/harbor'
+        isopen: false
+        logo: manager/mirror/HARBOR.png
+      - name: REGISTRY
+        description: >-
+          REGISTRY是用于构建元数据存储库的框架。 作为Registry的一部分，我们目前拥有SchemaRegistry和MLRegistry存储库。
+        homepage_url: 'https://www.cloudera.com/'
+        repo_url: 'https://github.com/hortonworks/registry'
+        isopen: false
+        logo: manager/mirror/REGISTERY.png
+  - name: 镜像操作
+    items:
+      - name: captain
+        description: >-
+          将您的Git工作流程转换为可连续交付的Docker容器。在captain.yaml中定义您的工作流程，并使用captain来进行持续交付服务，以为每次提交创建容器，对其进行测试，然后仅在测试通过时将其推送到注册表中。
+        homepage_url: ''
+        repo_url: 'https://github.com/harbur/captain'
+        isopen: false
+        logo: manager/build/captain.png
+      - name: HELM
+        description: Helm帮助您管理Kubernetes应用程序-Helm Charts帮助您定义，安装和升级最复杂的Kubernetes应用程序。
+        homepage_url: 'https://helm.sh'
+        repo_url: 'https://github.com/helm/helm'
+        isopen: false
+        logo: manager/build/HELM.png
+      - name: KubeVirt
+        description: >-
+          KubeVirt技术可满足已采用或想要采用Kubernetes但拥有现有基于虚拟机的工作负载且无法轻易将其容器化的开发团队的需求。
+          更具体地说，该技术提供了一个统一的开发平台，开发人员可以在该平台上构建，修改和部署驻留在公共共享环境中的应用程序容器和虚拟机中的应用程序。
+        homepage_url: 'https://kubevirt.io'
+        repo_url: 'https://github.com/kubevirt/kubevirt'
+        isopen: false
+        logo: manager/build/KubeVirt.png
+- category: 云原生底层技术
+  subcategories:
+    - name: 容器技术
+      items:
+      - name: kata
+        description: >-
+          Kata
+          Containers是一个开放源代码社区，致力于通过轻量级虚拟机来构建安全的容器运行时，这些虚拟机的感觉和性能类似于容器，但是使用硬件虚拟化技术作为第二防御层，可以提供更强的工作负载隔离。
+        homepage_url: 'https://katacontainers.io/'
+        repo_url: 'https://github.com/kata-containers'
+        isopen: true
+        logo: basic/container/kata.jpg
+      - name: iSula
+        description: iSula 是一种云原生轻量级容器解决方案，可通过统一、灵活的架构满足 ICT 领域端、边、云场景的多种需求。
+        homepage_url: ''
+        repo_url: 'https://gitee.com/openeuler/iSulad'
+        isopen: true
+        logo: basic/container/iSula.jpg
+      - name: Lxd
+        description: LXD是下一代的系统容器和虚拟机管理器。它为在容器或虚拟机中运行的完整Linux系统提供了统一的用户体验。
+        homepage_url: ''
+        repo_url: 'https://github.com/lxc/lxd'
+        isopen: false
+        logo: basic/container/lxd.jpg
+      - name: Firecracker
+        description: Firecracker 是一种专门用于创建和管理多租户容器和基于函数的服务的虚拟化技术。
+        homepage_url: 'https://github.com/firecracker-microvm/firecracker-containerd'
+        repo_url: ''
+        isopen: false
+        logo: basic/container/Firecracker.jpg
+      - name: gVisor
+        description: >-
+          gVisor 是一款新型沙箱解决方案，其能够为容器提供安全的隔离措施，同时继续保持远优于虚拟机的轻量化特性。
+        homepage_url: 'https://github.com/google/gvisor'
+        repo_url: ''
+        isopen: false
+        logo: basic/container/gVisor.jpg
+      - name: cri-o
+        description: CRI-O 项目（原名 OCID）准备为 Kubernetes 提供轻量级的运行时
+        homepage_url: 'https://cri-o.io/'
+        repo_url: 'https://github.com/cri-o'
+        isopen: false
+        logo: basic/container/cri-o.jpg
+      - name: BeyondVM
+        description: >-
+          BeyondVM胖容器解决方案是一种container-based实现的胖容器技术,兼容OCI标准,可以灵活的与Kubernetes集群进行集成。
+        homepage_url: 'https://www.beyondvm.com/'
+        repo_url: ''
+        isopen: false
+        logo: basic/container/BeyondVM.jpg
+    - name: 存储技术
+      items:
+        - name: openSDS
+          description: 'OpenSDS是一个多厂商参与开放的开源SDS存储架构,'
+          homepage_url: ''
+          repo_url: ''
+          isopen: false
+          logo: basic/db/opensds.png
+        - name: Ceph
+          description: >-
+            Ceph是加州大学Santa Cruz分校的Sage Weil（DreamHost的联合创始人）专为博士论文设计的新一代自由软件分布式文件系统。自2007年毕业之后，Sage开始全职投入到Ceph开
+            发之中，使其能适用于生产环境。Ceph的主要目标是设计成基于POSIX的没有单点故障的分布式文件系统，使数据能容错和无缝的复制。
+          homepage_url: https://ceph.io/
+          repo_url: https://github.com/ceph
+          logo: basic/db/ceph.png
+          isopen: false
+        - name: OpenEBS
+          description: >-
+            OpenEBS建立在Kubernetes上，以使状态应用程序可以轻松访问动态本地PV或复制的PV。 通过使用“容器附加存储”模式，用户可以报告更低的成本，更轻松的管理以及对团队的更多控制。
+          homepage_url: https://openebs.io/
+          repo_url: https://github.com/openebs/openebs
+          logo: basic/db/OpenEBS.png
+          isopen: false
+        - name: Gluster FS
+          description: >-
+            Gluster是一种软件定义的分布式存储，可以扩展到几个PB。它提供了用于对象，块和文件存储的接口。
+          homepage_url: https://www.gluster.org/
+          repo_url: https://github.com/gluster/glusterfs
+          logo: basic/db/GLUSTER.jpeg
+          isopen: false
+        - name: SWIFT
+          description: >-
+            Swift是一个高度可用的，分布式的，最终一致的对象/ blob存储。 组织可以使用Swift快速，安全和廉价地存储大量数据。
+          homepage_url: https://opendev.org/openstack/swift
+          repo_url: https://github.com/openstack/swift
+          logo: basic/db/SWIFT.jpeg
+          isopen: false
+        - name: Piraeus
+          description: >-
+            Piraeus是一种云原生存储系统，可通过动态配置，资源管理和高可用性为Kubernetes本地持久卷提供支持。 它会在Kubernetes节点内自动部署和横向扩展。
+            借助Piraeus，Kubernetes工作负载现在可以使用应用程序开发人员已习惯的相同数量的API来消耗高性能本地存储。
+          homepage_url: https://piraeus.io/
+          repo_url: https://github.com/piraeusdatastore/piraeus
+          logo: basic/db/Piraeus.jpeg
+          isopen: false
+        - name: UDS
+          description: ''
+          homepage_url: ''
+          repo_url: ''
+          logo: basic/db/UDS.jpeg
+          isopen: false
+
+    - name: 网络技术
+      items:
+        - name: Kube-OVN
+          description: >-
+            Kube-OVN将基于OVN的网络虚拟化与Kubernetes集成在一起。 它为企业提供了功能最多，操作最简单的高级容器网络结构。
+          homepage_url: https://kube-ovn.io/
+          repo_url: https://github.com/alauda/kube-ovn
+          logo: basic/net/Kube-OVN.png
+          isopen: true
+        - name: Bifrost
+          description: >-
+            Bifrost是一个开放源码的解决方案，支持针对kubernetes的L2网络。 Bifrost中的网络流量可以通过传统设备进行管理和监视。
+          homepage_url: http://harmonycloud.cn/overindex
+          repo_url: https://github.com/harmonycloud/Bifrost
+          logo: basic/net/Bifrost.png
+          isopen: true
+        - name: CALICO
+          description: >-
+            Calico是针对容器，虚拟机和基于主机的本地工作负载的开源网络和网络安全解决方案。 Calico支持广泛的平台，包括Kubernetes，OpenShift，Docker
+            EE，OpenStack和裸机服务。
+          homepage_url: https://docs.projectcalico.org/about/about-calico
+          repo_url: https://github.com/projectcalico/calico
+          logo: basic/net/CALICO.png
+          isopen: false
+        - name: KUBE ROUTER
+          description: >-
+            Kube-Router是Kubernetes网络的交钥匙解决方案，旨在提供操作简便性。 联网本身就很难。 在典型的Kubernetes集群中，您需要安装多个网络组件以实现各种功能。
+            由于有许多活动部件，因此使Kubernetes联网变得更加困难。 Kube-router为您将要使用的多个网络组件提供了一个凝聚而又精益和强大的替代方案。
+          homepage_url: https://www.kube-router.io/
+          repo_url: https://github.com/cloudnativelabs/kube-router
+          logo: basic/net/KUBEROUTER.png
+          isopen: false
+        - name: cilium
+          description: >-
+            Cilium是开源软件，用于提供和透明地保护应用程序工作负载（例如应用程序容器或进程）之间的网络连接和负载平衡。 Cilium在第3/4层运行以提供传统的网络和安全服务，在第7层运行以保护和安全使用HTTP，gRPC和Kafka等现代应用程序协议。
+            Cilium已集成到常见的业务流程框架中，例如Kubernetes和Mesos。
+          homepage_url: https://cilium.io/
+          repo_url: https://github.com/cilium/cilium
+          logo: basic/net/cilium.png
+          isopen: false
+        - name: open vswitch
+          description: >-
+            Open vSwitch是一种生产质量的多层虚拟交换机，已获得开源Apache 2.0许可证的许可。 它旨在通过程序扩展实现大规模网络自动化，同时仍支持标准管理接口和协议（例如NetFlow，sFlow，IPFIX，RSPAN，CLI，LACP，802.1ag）。
+            此外，它旨在支持跨多个物理服务器的分布，类似于VMware的vNetwork分布式vswitch或Cisco的Nexus 1000V。
+          homepage_url: https://www.openvswitch.org/
+          repo_url: https://github.com/openvswitch/ovs
+          logo: basic/net/OpenvSwitch.png
+          isopen: false
+        - name: flannel
+          description: >-
+            Flannel在每个主机上运行一个小的单一二进制代理，称为flanneld，并负责从更大的预配置地址空间中为每个主机分配子网租约。 Flannel直接使用Kubernetes
+            API或etcd来存储网络配置，分配的子网和任何辅助数据（例如主机的公共IP）。 使用多种后端机制之一转发数据包，包括VXLAN和各种云集成。
+          homepage_url: https://coreos.com/flannel/docs/latest/
+          repo_url: https://github.com/coreos/flannel
+          logo: basic/net/flannel.png
+          isopen: false
+        - name: weave net
+          description: >-
+            Weave Net创建了一个虚拟网络，该网络将Docker容器跨多个主机连接起来，并实现自动发现。 借助Weave Net，由多个容器组成的基于便携式微服务的应用程序可以在任何位置运行：在一台主机，多台主机上，甚至跨云提供商和数据中心。
+            应用程序使用网络就像将所有容器都插入同一个网络交换机一样，而无需配置端口映射，大使或链接。
+          homepage_url: https://www.weave.works/oss/net/
+          repo_url: https://github.com/weaveworks/weave
+          logo: basic/net/weavenet.png
+          isopen: false
+        - name: DANM
+          description: DANM Utils是建立在DANM网络管理平台之上的独立运营商的住所，可为您的集群提供增值服务！
+          homepage_url: https://github.com/nokia/danm
+          repo_url: https://github.com/nokia/danm
+          logo: basic/net/DANM.png
+          isopen: true
+        - name: false
+          description: >-
+            CNI（Container Network Interface）是 CNCF 旗下的一个项目，由一组用于配置 Linux 容器的网络接口的规范和库组成，同时还包含了一些插件。CNI
+            仅关心容器创建时的网络分配，和当容器被删除时释放网络资源。
+          homepage_url: https://github.com/containernetworking/cni
+          repo_url: https://github.com/containernetworking/cni
+          logo: basic/net/CNI.png
+          isopen: false
+        - name: CNI-Genie
+          description: >-
+            CNI-Genie使容器协调器（Kubernetes，Mesos）能够无缝连接到主机上安装的CNI插件的选择，包括“参考” CNI插件，例如网桥，macvlan，ipvlan，环回“第三方”
+            CNI插件（例如） ，（Calico，Romana，Weave-net）“专用” CNI插件，例如SR-IOV，DPDK（进行中）安装在主机上的任何通用CNI插件
+          homepage_url: https://github.com/cni-genie/CNI-Genie
+          repo_url: https://github.com/cni-genie/CNI-Genie
+          logo: basic/net/CNI-Genie.png
+          isopen: false
+        - name: BeyondFabric
+          description: >-
+            BeyondFabric是博云基于OVS深度自研的完全满足CNI标准的kubernetes容器网络插件，利用etcd作为其数据存储单元，内置完善的IPAM能力，能够很好的满足第一章节中提到的客户的核心诉求。
+          homepage_url: http://www.bocloud.com.cn/home
+          repo_url: ''
+          logo: basic/net/BeyondFabric.png
+          isopen: false
+        - name: Parcel
+          description: >-
+            快速捆绑时间-多核编译和文件系统缓存，即使重新启动后也能快速重建。 开箱即用的对JS，CSS，HTML，文件资产等的支持-无需安装插件。
+            在需要时使用Babel，PostCSS和PostHTML自动转换模块-甚至是node_modules。 使用动态import（）语句进行零配置代码拆分。 内置支持热模块更换。
+            友好的错误记录经验-语法突出显示的代码框架有助于查明问题。
+          homepage_url: https://parceljs.org/
+          repo_url: https://github.com/parcel-bundler/parcel
+          logo: basic/net/Parcel.png
+          isopen: false
+
+- category: 云原生安全技术
+  subcategories:
+    - name:
+      items:
+        - name: Sentinel
+          description: 面向云原生微服务的高可用流控防护组件
+          homepage_url: 'https://sentinelguard.io/zh-cn/'
+          repo_url: 'https://github.com/alibaba/Sentinel'
+          isopen: true
+          logo: safe/Sentinel.png
+        - name: TUF
+          description: >-
+            TUF可以帮助开发人员维护软件更新系统的安全性，甚至可以防止攻击破坏存储库或签名密钥的攻击者。
+            TUF提供了一个灵活的框架和规范，开发人员可以将其应用于任何软件更新系统。
+          homepage_url: 'https://theupdateframework.com'
+          repo_url: 'https://github.com/theupdateframework/tuf'
+          isopen: false
+          logo: safe/TUF.png
+        - name: kube-hunter
+          description: kube-hunter是一个开源工具，可在Kubernetes集群中搜寻安全问题。 它旨在提高Kubernetes环境中安全控制的知名度和可见性。
+          homepage_url: 'https://kube-hunter.aquasec.com'
+          repo_url: 'https://github.com/aquasecurity/kube-hunter'
+          isopen: false
+          logo: safe/kube-hunter.png
+        - name: kube-bench
+          description: 检查是否根据CIS Kubernetes基准测试中定义的安全最佳实践部署了Kubernetes
+          homepage_url: 'https://github.com/aquasecurity/kube-bench'
+          repo_url: 'https://github.com/aquasecurity/kube-bench'
+          isopen: false
+          logo: safe/kube-bench.jpeg
+        - name: Vault
+          description: >-
+            Vault 是秘密访问私密信息的工具，可以帮你管理一些私密的信息，比如 API 密钥，密码，验证等等。Vault
+            提供一个统一的接口来访问所有隐私信息，同时提供严格的访问控制和记录详细的审计日志
+          homepage_url: www.vaultproject.io/
+          repo_url: 'https://github.com/hashicorp/vault'
+          isopen: false
+          logo: safe/Vault.jpeg
+        - name: Occlum
+          description: >-
+            Occlum使在飞地内部轻松运行应用程序。 它只需要几个简单的命令就可以在安全区内运行未修改的程序。 Occlum是开源的，可以免费使用。
+            因此，您无需花费数月的时间将代码移植到安全区中，而是可以立即在安全区内运行应用程序！
+          homepage_url: https://occlum.io/
+          repo_url: https://github.com/occlum/occlum
+          logo: safe/Occlum.png
+          isopen: false
+        - name: OAuth2 Proxy
+          description: >-
+            反向代理和静态文件服务器，使用提供程序（Google，GitHub和其他提供商）提供身份验证，以通过电子邮件，域或组验证帐户。
+          homepage_url: https://oauth2-proxy.github.io/oauth2-proxy/
+          repo_url: https://github.com/oauth2-proxy/oauth2-proxy
+          logo: safe/OAuth2.png
+          isopen: false
+        - name: Athenz
+          description: 动态基础架构中基于X.509证书的服务认证和细粒度访问控制的开源平台
+          homepage_url: https://www.athenz.io/
+          repo_url: https://github.com/yahoo/athenz
+          logo: safe/Athenz.jpeg
+          isopen: false
+        - name: clair
+          description: >-
+            Clair是一个开源项目，用于静态分析应用程序容器（当前包括OCI和docker）中的漏洞。 客户端使用Clair API索引其容器映像，然后可以将其与已知漏洞进行匹配。
+          homepage_url: https://coreos.com/clair/docs/latest/
+          repo_url: https://github.com/quay/clair
+          logo: safe/clair.jpeg
+          isopen: false
+        - name: HUAWEI 容器安全
+          description: >-
+            容器安全服务能够扫描容器镜像中的漏洞，以及提供容器安全策略设置和防逃逸功能.容器安全服务的核心功能能够满足入侵防范与恶意代码防范等保条款
+          homepage_url: https://www.huaweicloud.com/product/cgs.html
+          repo_url: ''
+          logo: safe/容器安全.jpeg
+          offical: true
+        - name: DOSEC 小佑科技
+          description: >-
+            北京小佑科技专注于云计算安全的科技公司，我们开发了自主知识产权的PAAS容器安全防护产品，解决容器全生命周期的安全问题，同时为客户提供高品质的安全建设咨询、安全风险评估、安全事件处理、合规咨询等安全服务，以产品加服务的方式为客户提供高价值的安全解决方案。
+          homepage_url: https://www.dosec.cn/
+          repo_url: ''
+          logo: safe/DOSEC-小佑科技.jpeg
+          offical: true
+        - name: 百度安全
+          description: >-
+            百度安全以技术开源、专利共享、标准驱动为理念，联合互联网公司、安全厂商、终端制造商、 高校及科研机构， 推动AI时代的安全生态建设，让全行业享受更安全的AI所来带来的变革。
+          homepage_url: https://anquan.baidu.com/
+          repo_url: ''
+          logo: safe/百度安全.jpeg
+          offical: true
+        - name: QINGTENG 青藤云安全
+          description: >-
+            青藤云安全以服务器安全为核心，采用自适应安全架构，将预测、防御、监控和响应能力融为一体，构建基于主机端的安全态势感知平台，为用户提供持续的安全监控、分析和快速响应能力，帮助用户在公有云、私有云、混合云、物理机、虚拟机等多样化的业务环境下，实现安全的统一策略管理，有效预测风险，精准感知威胁，提升响应效率，全方位保护企业数字资产的安全与业务的高效开展。
+          homepage_url: https://qingteng.cn/
+          repo_url: ''
+          logo: safe/青藤云安全.jpeg
+          offical: true
+        - name: 奇安信
+          description: >-
+            专注于网络空间安全市场，为向政府、企业用户提供新一代企业级网络安全产品和服务。 凭借持续的研发创新和以实战攻防为核心的安全能力，已发展成为国内领先的基于大数据、人工智能和安全运营技术的网络安全供应商。
+          homepage_url: https://www.qianxin.com/
+          repo_url: ''
+          logo: safe/奇安信.jpeg
+          offical: true
+        - name: SSR
+          description: >-
+            浪潮SSR操作系统安全增强系统，是一款基于操作系统内核层开发的安全加固软件。与传统的防火墙、IDS/IPS不同，SSR工作在最贴近用户数据的操作系统层面，不仅可以避免外部的黑客攻击，同样可以预防来自内网攻击的风险。该产品弥补了传统信息安全解决方案在主机层安全的“短板”，与传统信息安全产品形成了良好的互补，提升操作系统的安全级别，从而达到国家等级保护的三级要求，为客户构建真正的安全长城。
+          homepage_url: https://cloud.inspur.com/
+          repo_url: ''
+          logo: safe/SSR.jpeg
+          offical: true
+        - name: BLACKDUCK
+          description: >-
+            15年来，全球的安全，开发和法律团队一直依靠Black Duck来帮助他们管理使用开源带来的风险。 建立在Black Duck KnowledgeBase™（最全面的开源组件，漏洞和许可证信息数据库）的基础上，Black
+            Duck软件组成分析解决方案和开源审计为您提供了跟踪代码中的开源，减轻安全性所需的见解。 和许可合规风险，并使用现有的DevOps工具和流程自动执行开源策略。
+          homepage_url: https://www.blackducksoftware.com/
+          repo_url: https://github.com/blackducksoftware/synopsys-detect
+          logo: safe/BLACKDUCK.jpeg
+          offical: true
+          isopen: false
+        - name: DSS
+          description: >-
+            道客云是一家云计算创业公司，围绕Docker技术提供各类云计算平台服务，包括Docker Hub镜像服务，Docker原生应用运维和管理平台，开源技术社区活动等
+          homepage_url: https://www.daocloud.io/
+          repo_url: ''
+          logo: safe/DSS.jpeg
+          offical: true
+
+- category: 云原生监测分析
+  subcategories:
+    - name:
+      items:
+        - name: SOFATracer
+          description: >-
+            SOFATracer 是蚂蚁金服开发的基于 OpenTracing 规范 的分布式链路跟踪系统，其核心理念就是通过一个全局的 TraceId
+            将分布在各个服务节点上的同一次请求串联起来。通过统一的 TraceId 将调用链路中的各种网络调用情况以日志的方式记录下来同时也提供远程汇报到 Zipkin
+            进行展示的能力，以此达到透视化网络调用的目的。
+          homepage_url: https://www.sofastack.tech/projects/sofa-tracer/overview/
+          repo_url: https://github.com/sofastack/sofa-tracer
+          logo: mointor/SOFATRACER.png
+          isopen: true
+        - name: Skywalking
+          description: >-
+            适用于分布式系统的应用程序性能监视工具，特别是为微服务，云原生和基于容器（Docker，K8s，Mesos）的体系结构而设计的。
+          homepage_url: https://skywalking.apache.org/
+          repo_url: https://github.com/apache/skywalking
+          logo: mointor/Skywalking.png
+          isopen: true
+        - name: Prometheus
+          description: Prometheus监视系统和时间序列数据库。
+          homepage_url: https://prometheus.io/
+          repo_url: https://github.com/prometheus/prometheus
+          logo: mointor/Prometheus.jpg
+          isopen: false
+        - name: Grafana
+          description: 用于Graphite，InfluxDB和Prometheus等的精美监视和指标分析和仪表板的工具
+          homepage_url: https://grafana.com
+          repo_url: https://github.com/grafana/grafana
+          logo: mointor/Grafana.jpg
+          isopen: false
+        - name: ZABBIX
+          description: 实时监视IT组件和服务，例如网络，服务器，VM，应用程序和云。
+          homepage_url: https://www.zabbix.com/
+          repo_url: https://github.com/zabbix/zabbix
+          logo: mointor/ZABBIX.jpg
+          isopen: false
+        - name: Sysdig
+          description: Sysdig是提供深层系统可见性的简单工具，并具有对容器的本地支持。
+          homepage_url: https://sysdig.com/
+          repo_url: https://github.com/draios/sysdig
+          logo: mointor/sysdig.png
+          isopen: false
+        - name: fluentd
+          description: 统一日志记录层
+          homepage_url: https://www.fluentd.org/
+          repo_url: https://github.com/fluent/fluentd/
+          logo: mointor/fluentd.jpg
+          isopen: false
+        - name: kiali
+          description: >-
+            Kiali提供了以下问题的答案：哪些微服务是我的Istio服务网格的一部分，它们如何连接？
+          homepage_url: https://www.kiali.io
+          repo_url: https://github.com/kiali/kiali
+          logo: mointor/kiali.jpg
+          isopen: false
+        - name: elastic
+          description: Elasticsearch是为云构建的分布式RESTful搜索引擎。
+          homepage_url: https://www.elastic.co/products/elasticsearch
+          repo_url: https://github.com/elastic/elasticsearch
+          logo: mointor/elastic.jpg
+          isopen: false
+        - name: JAEGER
+          description: >-
+            受到Dapper和OpenZipkin启发的Jaeger是由Uber Technologies创建并捐赠给Cloud Native Computing
+            Foundation的分布式跟踪平台。
+          homepage_url: https://github.com/jaegertracing/jaeger
+          repo_url: https://github.com/jaegertracing/jaeger
+          logo: mointor/JAEGER.png
+          isopen: false
+        - name: ZIPKIN
+          description: Zipkin 是 Twitter 的一个开源项目，允许开发者收集 Twitter 各个服务上的监控数据，并提供查询接口
+          homepage_url: zipkin.io/
+          repo_url: 'https://github.com/openzipkin/zipkin'
+          isopen: false
+          logo: mointor/ZIPKIN.jpg
+        - name: OPENTRACING
+          description: >-
+            通过为流行的平台提供一致的，富有表现力的，供应商中立的API，OpenTracing使开发人员可以轻松地通过O（1）配置更改添加（或切换）跟踪实现。
+          homepage_url: opentracing.io
+          repo_url: 'https://github.com/opentracing/opentracing-go'
+          isopen: false
+          logo: mointor/OPENTRACING.jpg
+        - name: kibana
+          description: >-
+            Kibana是一个开源的分析与可视化平台，设计出来用于和Elasticsearch一起使用的。你可以用kibana搜索、查看存放在Elasticsearch中的数据。
+          homepage_url: www.elastic.co/products/kibana
+          repo_url: 'https://github.com/elastic/kibana'
+          isopen: false
+          logo: mointor/kibana.jpg
