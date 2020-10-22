@@ -1,0 +1,19 @@
+name: deploy-server
+
+on:
+  watch:
+    types: started
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: Deploy server
+      run: |
+        GITHUB_RUN_ID=${GITHUB_RUN_ID:-"0"}
+        WORK_DIR=/tmp/${GITHUB_RUN_ID}
+        
+        pwd
