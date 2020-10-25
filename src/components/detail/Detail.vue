@@ -24,13 +24,12 @@
             <vue-content-loading :width="400" :height="300" v-if="loading">
               <rect x="0" y="0" rx="4" ry="4" width="400" height="300" />
             </vue-content-loading>
-            <Chart :commits="data.commits" v-else></Chart>
+            <Chart :commits="data.commits" :dates="data.dates" v-else-if="data.commits.length"></Chart>
           </div>
         </el-col>
         <el-col :span="16">
           <div class="detail_main">
             <p class="detail_title">{{ data.name }}</p>
-            <a class="detail_parent" :href="data.product">{{ data.product }}</a>
             <p class="detail_category">{{ category.category }} · {{ subcategory.name }}</p>
             <p class="detail_description">{{ data.description }}</p>
           </div>
@@ -66,7 +65,8 @@
 <script>
 import Chart from '@/components/detail/Chart.vue'
 import VueContentLoading from 'vue-content-loading'
-import { constants } from 'zlib';
+import { constants } from 'zlib'
+import moment from 'moment'
 
 export default {
   name: "detail",
@@ -75,6 +75,7 @@ export default {
       dialogVisible: false,
       data: {
         commits: [],
+        dates: [],
         properties: []
       },
       category: {},
@@ -110,9 +111,11 @@ export default {
             this.data.pushed_at = data.pushed_at
             this.data.stargazers_count = data.stargazers_count
             this.data.commits = []
+            this.data.dates = []
 
             if (active.length) {
-              this.data.commits = active.map(week => week.total)  
+              this.data.commits = active.map(week => week.total)
+              this.data.dates = active.map(week => this.getDateOfWeek(week.week))
             }
 
             this.data.properties = [{
@@ -132,6 +135,11 @@ export default {
               value: repo.pushed_at.replace("T"," ").replace("Z",""),
             }]
           })
+          .catch(e => {
+            console.log(111, e)
+          })
+      } else {
+        this.loading = false
       }
 
       this.data.name = data.name
@@ -148,6 +156,11 @@ export default {
       }
       return url
     },
+    getDateOfWeek: function(w) {
+      const d =  new Date(1602000000000 + w * 1000)
+      const m = moment(d)
+      return m.format("MMM")
+    },
     dialogClosed: function() {
       this.loading = true
     }
@@ -157,9 +170,9 @@ export default {
 <style>
 .product-dialog.el-dialog {
   padding: 40px;
-  max-height: 640px;
+  max-height: 540px;
   width: 90%;
-  max-width: 940px;
+  max-width: 840px;
   border-radius: 8px;
 }
 .product-dialog .el-dialog__body {
@@ -172,13 +185,21 @@ export default {
 .detail_image_container {
   box-shadow:1px 1px 8px #999;
   width: 100%;
+  position: relative;
+  height: 150px;
   border-radius: 4px;
   margin-bottom: 20px;
 }
 
 .detail_image {
-  width: 60%;
-  margin-left: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 .detail_tags_container {
@@ -214,13 +235,6 @@ export default {
   margin: 0px;
 }
 
-.detail_parent {
-  margin-top: 6px;
-  display: inline-block;
-  text-decoration: none;
-  color: #2e67bf;
-  font-weight: 600;
-}
 
 .detail_category {
   margin: 0px;
@@ -258,5 +272,7 @@ export default {
 .product-dialog .el-dialog__body {
   padding: 0;
 }
+
+
 
 </style>
