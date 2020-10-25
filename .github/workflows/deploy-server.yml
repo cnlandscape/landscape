@@ -1,8 +1,10 @@
 name: deploy-server
 
 on:
-  watch:
-    types: started
+  push:
+    branches: [ server ]
+  pull_request:
+    branches: [ server ]
 
 jobs:
   deploy:
@@ -15,5 +17,5 @@ jobs:
       run: |
         GITHUB_RUN_ID=${GITHUB_RUN_ID:-"0"}
         WORK_DIR=/tmp/${GITHUB_RUN_ID}
-        
+
         pwd
