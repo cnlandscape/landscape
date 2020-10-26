@@ -8,10 +8,12 @@ function resolve(dir) {
 
 const name = 'CNIA 中国云原生技术生态图景' // page title
 const source =  require('js-yaml').safeLoad(fs.readFileSync(path.resolve('landscapes.yml')))
+const filter =  require('js-yaml').safeLoad(fs.readFileSync(path.resolve('filter.yml')))
 const child_process = require('child_process');
 
 // 移动文件
 fs.writeFileSync('./public/data.json', JSON.stringify(source))
+fs.writeFileSync('./public/filter.json', JSON.stringify(filter))
 child_process.exec('rm -rf public/logos; cp -rf logos public');	
 
 

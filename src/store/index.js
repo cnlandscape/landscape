@@ -7,7 +7,9 @@ export default new Vuex.Store({
   state: {
     info: {},
     selectFilter: [],
-    total: 0
+    total: 0,
+    filterData: [],
+    tagsData: []
   },
   mutations: {
     initInfo (state, payload) {
@@ -19,6 +21,10 @@ export default new Vuex.Store({
       }
       state.total = total
       state.info = payload
+    },
+    initFilter (state, payload) {
+      state.filterData = payload.filter.selectFilter
+      state.tagsData = payload.filter.tags
     },
     addFilter (state, payload) {
       let filters = state.selectFilter

@@ -27,6 +27,7 @@ export default {
   },
   beforeMount() {
     this.$store.commit('initInfo', require('../public/data.json'))
+    this.$store.commit('initFilter', require('../public/filter.json'))
   }
 }
 </script>

@@ -5,15 +5,11 @@
         <i class="el-icon-refresh-right"></i>
         重置过滤条件
       </div>
-      <Select :data="group"></Select>
-      <Select :data="sort"></Select>
-      <Select :data="company"></Select>
-      <Select :data="offical"></Select>
-      <Select :data="location"></Select>
+      <Select v-for="(item, index) in this.$store.state.filterData" :data="item" :key="index"></Select>
     </div>
     <div>
       <div>过滤器示例</div>
-      <el-tag v-for="(tag, index) in tags" :key="index" class="tag" @click="useTags(tag)">{{ tag.title }}</el-tag>
+      <el-tag v-for="(tag, index) in this.$store.state.tagsData" :key="index" class="tag" @click="useTags(tag)">{{ tag.title }}</el-tag>
     </div>
     <div class="download_container">
       <a :href="`${path}landscape.pdf`" download="新生态图.pdf" class="download">
@@ -33,104 +29,7 @@ export default {
   },
   data() {
     return {
-      path:process.env.BASE_URL,
-      group: {
-        title: "开源项目",
-        key: "open",
-        options: [{
-          value: 'nation',
-          label: '国内开源主导'
-        }, {
-          value: 'foreign',
-          label: '国外开源主导'
-        }]
-      },
-      sort: {
-        title: "项目所属基金会",
-        key: "foundation",
-        options: [{
-          value: 'cncf',
-          label: 'CNCF'
-        }, {
-          value: 'apache',
-          label: 'Apache'
-        }]
-      },
-      company: {
-        title: "项目发起组织",
-        key: "company",
-        options: [{
-          value: 'alibaba',
-          label: '阿里巴巴'
-        }, {
-          value: 'tencent',
-          label: '腾讯'
-        }, {
-          value: 'huawei',
-          label: '华为'
-        }, {
-          value: 'baidu',
-          label: '百度'
-        }, {
-          value: 'ant',
-          label: '蚂蚁金服'
-        }]
-      },
-      offical: {
-        title: "项目版权",
-        key: "offical",
-        options: [{
-          value: 'notOffical',
-          label: '非商业版'
-        }, {
-          value: 'isOffical',
-          label: '商业版'
-        }]
-      },
-      location: {
-        title: "组织所在区域",
-        key: "location",
-        options: [{
-          value: 'Beijing',
-          label: '北京'
-        }, {
-          value: 'Tianjing',
-          label: '天津'
-        }]
-      },
-      tags: [
-        {
-          title: "开源景观",
-          filters: [
-            {
-              key: "open",
-              options: ["nation", "foreign"]
-            }
-          ]
-        },
-        {
-          title: "北京地区",
-          filters: [
-            {
-              key: "open",
-              options: ["nation"]
-            },
-            {
-              key: "location",
-              options: ["Beijing"]
-            }
-          ]
-        },
-        {
-          title: "认证的 K8s",
-          filters: [
-            {
-              key: "foundation",
-              options: ["cncf"]
-            }
-          ]
-        },
-      ]
+      path:process.env.BASE_URL
     }
   },
   methods: {
