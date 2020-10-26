@@ -82,7 +82,7 @@ export default {
 <style scoped>
 .product-echarts {
   width: 260px;
-  height: 200px;
+  height: 260px;
 }
 
 </style>

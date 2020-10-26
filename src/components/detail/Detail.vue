@@ -40,7 +40,7 @@
               <rect x="0" y="50" rx="4" ry="4" width="400" height="15" />
               <rect x="0" y="75" rx="4" ry="4" width="400" height="15" />
             </vue-content-loading>
-            <el-form ref="form" :model="data" label-width="80px" label-position="left" v-else>
+            <el-form ref="form" :model="data" label-width="80px" label-position="left" size="small" v-else>
               <el-form-item v-for="(value, index) in data.properties" :key="index" :label="value.name">
                 <a class="detail_sub_link" :underline="false" :href="value.src" target="_blank" v-if="value.src">
                   {{ value.value }}
@@ -136,10 +136,14 @@ export default {
             }]
           })
           .catch(e => {
-            console.log(111, e)
+            this.loading = false
+            this.data.dates = []
+            this.data.commits = []
           })
       } else {
         this.loading = false
+        this.data.dates = []
+        this.data.commits = []
       }
 
       this.data.name = data.name
@@ -214,19 +218,20 @@ export default {
   padding: 4px 6px;
   background-color: #98cdff;
   margin-right: 10px;
-  margin-bottom: 6px;
+  margin-top: 5px;
 }
 
 .tag_name {
   display: inline-block;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   margin-right: 6px;
+  color: #222;
 }
 
 .tag_value {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .detail_title {
@@ -243,10 +248,12 @@ export default {
 }
 
 .detail_description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 130%;
   margin-bottom: .8rem;
   max-height: 300px;
+  font-weight: 500;
+  font-family: '宋体';
 }
 
 .el-form-item {
