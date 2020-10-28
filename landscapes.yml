@@ -249,7 +249,7 @@ landscape:
         homepage_url: 'https://github.com/brpc/brpc'
         repo_url: 'https://github.com/brpc/brpc'
         isopen: true
-        logo: manager/rpc/brpc.png        
+        logo: manager/rpc/brpc.png
       - name: SOFARPC
         description: SOFARPC 是一个高可扩展性、高性能、生产级的 Java RPC 框架。在蚂蚁集团 SOFARPC 已经经历了十多年及五代版本的发展
         homepage_url: 'https://github.com/sofastack/sofa-rpc'
@@ -295,7 +295,7 @@ landscape:
         homepage_url: 'https://www.iresty.com/'
         repo_url: 'https://github.com/apache/apisix'
         isopen: true
-        logo: manager/api/apisix.png
+        logo: manager/api/APISIX.png
       - name: krakenD
         description: >-
           KrakenD是高性能的开源API网关。它的核心功能是创建一个API，该API充当许多微服务到单个端点的聚合器，为您自动完成繁重的工作：聚合，转换，过滤，解码，限制，身份验证等。
@@ -545,7 +545,7 @@ landscape:
         homepage_url: 'https://about.gitlab.com/'
         repo_url: 'https://github.com/gitlabhq/gitlabhq'
         isopen: false
-        logo: manager/cicd/Gitlab.png
+        logo: manager/cicd/GitLab.png
   - name: 自动化配置
     items:
       - name: Apollo
@@ -849,7 +849,7 @@ landscape:
             由于有许多活动部件，因此使Kubernetes联网变得更加困难。 Kube-router为您将要使用的多个网络组件提供了一个凝聚而又精益和强大的替代方案。
           homepage_url: https://www.kube-router.io/
           repo_url: https://github.com/cloudnativelabs/kube-router
-          logo: basic/net/KUBEROUTER.png
+          logo: basic/net/KUBERouter.png
           isopen: false
         - name: cilium
           description: >-
