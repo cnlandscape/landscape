@@ -1,10 +1,11 @@
 version: "3.3"
 services:
   server:
-    image: "server"
+    build:
+      context: ./
     ports:
       - "3000:3000"
     volumes:
-       - /mnt/landscape/server:/var/lib/mysql/data
+       - /tmp/landscape/server:/var/lib/mysql/data
     environment:
       API_TOKEN: b3682380260a68ac20dba634f13e4ffda26463c7

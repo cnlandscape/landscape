@@ -15,7 +15,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Deploy server
       run: |
-        GITHUB_RUN_ID=${GITHUB_RUN_ID:-"0"}
-        WORK_DIR=/tmp/${GITHUB_RUN_ID}
-
         pwd
+        ls
+        cd server
+        docker-compose build
+        docker-compose up --force-recreate -d
