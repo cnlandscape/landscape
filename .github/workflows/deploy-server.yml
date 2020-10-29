@@ -19,4 +19,4 @@ jobs:
         ls
         cd server
         docker-compose build
-        docker-compose up --force-recreate -d
+        API_TOKEN=${{ secrets.DEPLOY_HOST }} docker-compose up --force-recreate -d
