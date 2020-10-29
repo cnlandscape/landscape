@@ -7,5 +7,6 @@ services:
       - "3000:3000"
     volumes:
        - /tmp/landscape/server:/var/lib/mysql/data
+       - /etc/hosts:/etc/hosts
     environment:
       API_TOKEN: b3682380260a68ac20dba634f13e4ffda26463c7
