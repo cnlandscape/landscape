@@ -80,7 +80,8 @@ export default {
       },
       category: {},
       subcategory: {},
-      loading: true
+      loading: true,
+      host: "https://landscape.opensourcecloud.cn/"
     };
   },
   components: {
@@ -90,8 +91,8 @@ export default {
   methods: {
     getGithubInfo: async function(group, project) {
       return await Promise.all([
-        this.$fetch(`/repos/${group}/${project}`),
-        this.$fetch(`/repos/${group}/${project}/stats/commit_activity`)
+        this.$fetch(`${this.host}/repos/${group}/${project}`),
+        this.$fetch(`${this.host}/repos/${group}/${project}/stats/commit_activity`)
       ])
     },
     show: async function (data, subcategory, category) {
