@@ -4,6 +4,15 @@ landscape:
   subcategories:
   - name: 边缘计算
     items:
+    - name: test
+      description: >-
+        test是信通院云原生技术全景测试项目
+      homepage_url: 'https://github.com/test/real'
+      repo_url: 'https://github.com/test/real'
+      isopen: true
+      logo: app/edge/testlogo.png
+      filter:
+        - nation
     - name: OpenYurt
       description: >-
         OpenYurt 是阿里巴巴开源的首个边缘计算云原生项目。该项目主打“云边一体化”概念，依托原生 Kubernetes
