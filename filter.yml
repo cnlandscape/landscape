@@ -28,11 +28,11 @@ filter:
     - value: 'ant'
       label: '蚂蚁金服'
   - title: "项目版权"
-    key: "offical"
+    key: "official"
     options:
-    - value: 'notOffical'
+    - value: 'notOfficial'
       label: '非商业版'
-    - value: 'isOffical'
+    - value: 'isOfficial'
       label: '商业版'
   - title: "组织所在区域"
     key: "location"

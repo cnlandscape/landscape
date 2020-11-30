@@ -4,15 +4,6 @@ landscape:
   subcategories:
   - name: 边缘计算
     items:
-    - name: test
-      description: >-
-        test是信通院云原生技术全景测试项目
-      homepage_url: 'https://github.com/test/real'
-      repo_url: 'https://github.com/test/real'
-      isopen: true
-      logo: app/edge/testlogo.png
-      filter:
-        - nation
     - name: OpenYurt
       description: >-
         OpenYurt 是阿里巴巴开源的首个边缘计算云原生项目。该项目主打“云边一体化”概念，依托原生 Kubernetes
@@ -34,7 +25,7 @@ landscape:
       repo_url: https://github.com/kubeedge/kubeedge
       logo: app/edge/KubeEdge.png
       isopen: true
-      offical: false
+      official: false
       tags:
       - name: CNCF
         value: 毕业
@@ -52,7 +43,7 @@ landscape:
       repo_url: https://github.com/kubeedge/kubeedge
       logo: app/edge/openedge.png
       isopen: true
-      offical: false
+      official: false
       tags:
       - name: CNCF
         value: 毕业
@@ -1003,42 +994,42 @@ landscape:
           homepage_url: https://www.huaweicloud.com/product/cgs.html
           repo_url: ''
           logo: safe/容器安全.jpeg
-          offical: true
+          official: true
         - name: DOSEC 小佑科技
           description: >-
             北京小佑科技专注于云计算安全的科技公司，我们开发了自主知识产权的PAAS容器安全防护产品，解决容器全生命周期的安全问题，同时为客户提供高品质的安全建设咨询、安全风险评估、安全事件处理、合规咨询等安全服务，以产品加服务的方式为客户提供高价值的安全解决方案。
           homepage_url: https://www.dosec.cn/
           repo_url: ''
           logo: safe/DOSEC-小佑科技.jpeg
-          offical: true
+          official: true
         - name: 百度安全
           description: >-
             百度安全以技术开源、专利共享、标准驱动为理念，联合互联网公司、安全厂商、终端制造商、 高校及科研机构， 推动AI时代的安全生态建设，让全行业享受更安全的AI所来带来的变革。
           homepage_url: https://anquan.baidu.com/
           repo_url: ''
           logo: safe/百度安全.jpeg
-          offical: true
+          official: true
         - name: QINGTENG 青藤云安全
           description: >-
             青藤云安全以服务器安全为核心，采用自适应安全架构，将预测、防御、监控和响应能力融为一体，构建基于主机端的安全态势感知平台，为用户提供持续的安全监控、分析和快速响应能力，帮助用户在公有云、私有云、混合云、物理机、虚拟机等多样化的业务环境下，实现安全的统一策略管理，有效预测风险，精准感知威胁，提升响应效率，全方位保护企业数字资产的安全与业务的高效开展。
           homepage_url: https://qingteng.cn/
           repo_url: ''
           logo: safe/青藤云安全.jpeg
-          offical: true
+          official: true
         - name: 奇安信
           description: >-
             专注于网络空间安全市场，为向政府、企业用户提供新一代企业级网络安全产品和服务。 凭借持续的研发创新和以实战攻防为核心的安全能力，已发展成为国内领先的基于大数据、人工智能和安全运营技术的网络安全供应商。
           homepage_url: https://www.qianxin.com/
           repo_url: ''
           logo: safe/奇安信.jpeg
-          offical: true
+          official: true
         - name: SSR
           description: >-
             浪潮SSR操作系统安全增强系统，是一款基于操作系统内核层开发的安全加固软件。与传统的防火墙、IDS/IPS不同，SSR工作在最贴近用户数据的操作系统层面，不仅可以避免外部的黑客攻击，同样可以预防来自内网攻击的风险。该产品弥补了传统信息安全解决方案在主机层安全的“短板”，与传统信息安全产品形成了良好的互补，提升操作系统的安全级别，从而达到国家等级保护的三级要求，为客户构建真正的安全长城。
           homepage_url: https://cloud.inspur.com/
           repo_url: ''
           logo: safe/SSR.jpeg
-          offical: true
+          official: true
         - name: BLACKDUCK
           description: >-
             15年来，全球的安全，开发和法律团队一直依靠Black Duck来帮助他们管理使用开源带来的风险。 建立在Black Duck KnowledgeBase™（最全面的开源组件，漏洞和许可证信息数据库）的基础上，Black
@@ -1046,7 +1037,7 @@ landscape:
           homepage_url: https://www.blackducksoftware.com/
           repo_url: https://github.com/blackducksoftware/synopsys-detect
           logo: safe/BLACKDUCK.jpeg
-          offical: true
+          official: true
           isopen: false
         - name: DSS
           description: >-
@@ -1054,7 +1045,7 @@ landscape:
           homepage_url: https://www.daocloud.io/
           repo_url: ''
           logo: safe/DSS.jpeg
-          offical: true
+          official: true
 
 - category: 云原生监测分析
   subcategories:
