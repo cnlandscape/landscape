@@ -7,7 +7,7 @@
           <div class="items_subdiv">
             <p class="items_title">{{ subcategory.name }}</p>
             <div class="items_detail" :class="{ smallGrid: subcategory.items.length > 4, tinGrid: subcategory.items.length > 1, middleGrid: subcategory.items.length > 6, largeGrid: subcategory.items.length > 9}">
-              <div class="item" :class="{big: item.isopen, small: !item.isopen, offical: item.offical, hiddenBackground: !isShow(item.filter)}" v-for="(item, index) in subcategory.items" :key="index">
+              <div class="item" :class="{big: item.isopen, small: !item.isopen, official: item.official, hiddenBackground: !isShow(item.filter)}" v-for="(item, index) in subcategory.items" :key="index">
                 <div class="oss" :class="{ isShow: !isShow(item.filter)}">
                   <div :style="{ backgroundImage: 'url(' + `logos/${item.logo}` + ')' }" :class="{openImg: item.isopen, img: !item.isopen}" alt="" @click="showDetail(item, subcategory, category)"></div>
                   <p class="item_title" v-if="item.isopen">国内开源</p>
@@ -140,7 +140,7 @@ export default {
   border-image-slice: 10;
 }
 
-.offical {
+.official {
   border: 2px solid transparent;
   border-image: linear-gradient(to right, #49f1f2, #0000ae);
   border-image-slice: 10;
