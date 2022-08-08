@@ -6,7 +6,7 @@
         <div class="items" v-for="(subcategory, index) in this.category.subcategories" :key="index">
           <div class="items_subdiv">
             <p class="items_title">{{ subcategory.name }}</p>
-            <div class="items_detail" :class="{ smallGrid: subcategory.items.length > 4, tinGrid: subcategory.items.length > 1, middleGrid: subcategory.items.length > 6, largeGrid: subcategory.items.length > 9}">
+            <div class="items_detail" :class="{ smallGrid: subcategory.items.length > 4, tinGrid: subcategory.items.length > 0, middleGrid: subcategory.items.length > 6, largeGrid: subcategory.items.length > 9}">
               <div class="item" :class="{big: item.isopen, small: !item.isopen, official: item.official, hiddenBackground: !isShow(item.filter)}" v-for="(item, index) in subcategory.items" :key="index">
                 <div class="oss" :class="{ isShow: !isShow(item.filter)}">
                   <div :style="{ backgroundImage: 'url(' + `logos/${item.logo}` + ')' }" :class="{openImg: item.isopen, img: !item.isopen}" alt="" @click="showDetail(item, subcategory, category)"></div>
