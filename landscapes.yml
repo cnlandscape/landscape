@@ -1157,12 +1157,12 @@ landscape:
           repo_url: 'https://github.com/elastic/kibana'
           isopen: false
           logo: mointor/kibana.jpg
-        - name: MetaFlow
+        - name: DeepFlow
           description: >-
-            MetaFlow是云杉网络开源的一款高度自动化的可观测性平台，是为云原生应用开发者建设可观测性能力而量身打造的全栈、全链路、高性能数据引擎。
-            MetaFlow使用eBPF、WASM、OpenTelemetry等新技术，创新的实现了AutoTracing、AutoMetrics、AutoTagging、SmartEncoding等核心机制，
-            帮助开发者提升埋点插码的自动化水平，降低可观测性平台的运维复杂度。利用MetaFlow的可编程能力和开放接口，开发者可以快速将其融入到自己的可观测性技术栈中。
-          homepage_url: https://deepflow.yunshan.net/zh/metaflow.html
-          repo_url: 'https://github.com/metaflowys/metaflow'
+            DeepFlow是云杉网络开源的一款高度自动化的可观测性平台，是为云原生应用开发者建设可观测性能力而量身打造的全栈、全链路、高性能数据引擎。
+            DeepFlow使用eBPF、WASM、OpenTelemetry等新技术，创新的实现了AutoTracing、AutoMetrics、AutoTagging、SmartEncoding等核心机制，
+            帮助开发者提升埋点插码的自动化水平，降低可观测性平台的运维复杂度。利用DeepFlow的可编程能力和开放接口，开发者可以快速将其融入到自己的可观测性技术栈中。
+          homepage_url: https://deepflow.yunshan.net/zh/community.html
+          repo_url: 'https://github.com/deepflowys/deepflow'
           isopen: true
-          logo: mointor/metaflow.jpg
+          logo: mointor/deepflow.svg
